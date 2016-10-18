@@ -89,6 +89,8 @@ FDBから取得したポート番号に対してパケットを送信するよ�
 
 ###動作解説
 [trema.multi.conf](https://github.com/handai-trema/learning-switch-Tatsu-Tanaka/blob/master/trema.multi.conf)で指定されているSDNの構造は、スイッチが4つ（lsw1〜lsw4）が存在し、各スイッチに対してホストが2つずつ（host1-1,host1-2,host2-1,・・・,host4-2）接続されている。
+図を以下に示す。
+![](multi_learning_topology.jpg)
 以下の動作テストを行った。
 ####host1-1とhost1-2の送受信
 まず端末を立ち上げ、multi-learning-Tatsu-Tanakaディレクトリにおいて`./bin/trema run ./lib/multi_learning_switch.rb -c trema.multi.conf`を入力し、実行する。
